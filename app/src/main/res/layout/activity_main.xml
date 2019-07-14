@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:background="@drawable/gradient_anim"
+        android:id="@+id/mainLayout">
+
+
+    <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteY="430dp"
+            tools:layout_editor_absoluteX="0dp">
+
+
+        <ImageView
+                android:layout_width="300dp"
+                android:layout_height="89dp"
+                android:src="@drawable/one_login"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="64dp"
+                app:layout_constraintTop_toTopOf="parent"
+                android:id="@+id/imageView"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"/>
+
+
+        <View
+                android:id="@+id/bar"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/colorOffWhite"
+                app:layout_constraintTop_toBottomOf="@id/imageView"
+                android:layout_marginLeft="64dp"
+                android:layout_marginStart="64dp"
+                android:layout_marginRight="64dp"
+                android:layout_marginEnd="64dp"
+                ></View>
+
+
+        <AutoCompleteTextView
+                app:layout_constraintTop_toBottomOf="@+id/bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textColor="@color/colorOffWhite"
+                android:hint="Enter Username"
+                android:padding="12dp"
+                android:layout_marginTop="80dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:drawableLeft="@drawable/ic_user"
+                android:drawablePadding="8dp"
+                tools:layout_editor_absoluteX="16dp"
+                android:id="@+id/autoCompleteTextView2"
+                tools:layout_editor_absoluteY="196dp"/>
+
+        <AutoCompleteTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textColor="@color/colorOffWhite"
+                android:hint="Password"
+                android:padding="12dp"
+                android:drawableLeft="@drawable/ic_pass"
+                android:drawablePadding="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                tools:layout_editor_absoluteX="28dp"
+                android:id="@+id/autoCompleteTextView"
+                android:layout_marginTop="24dp"
+                app:layout_constraintTop_toBottomOf="@+id/autoCompleteTextView2"/>
+
+
+        <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="32dp"
+                android:text="I accept the terms and conditions"
+                android:padding="8dp"
+                android:textColor="@color/colorOffWhite"
+                app:layout_constraintTop_toBottomOf="@+id/autoCompleteTextView"
+                tools:layout_editor_absoluteX="16dp"
+                android:id="@+id/checkBox"/>
+
+
+        <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/checkBox"
+                android:layout_marginTop="48dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                app:cardCornerRadius="24dp"
+                android:clickable="true"
+                android:foreground="?selectableItemBackground"
+                android:background="@color/colorPrimary"
+                app:cardElevation="2dp"
+                android:backgroundTint="#4caf50"
+                android:id="@+id/cardView"
+                tools:layout_editor_absoluteX="34dp">
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="LOGIN"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:padding="14dp"
+                    android:textColor="#FFF"
+                    android:textSize="22dp"
+                    />
+
+
+        </android.support.v7.widget.CardView>
+
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="New to OneLogin? Tap here"
+                android:textColor="@color/colorOffWhite"
+                android:layout_marginTop="32dp"
+                android:textAlignment="center"
+                app:layout_constraintTop_toBottomOf="@+id/cardView"
+                tools:layout_editor_absoluteX="16dp"/>
+
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>
